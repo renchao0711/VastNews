@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		570106491FDF787D00062722 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106481FDF787D00062722 /* main.m */; };
+		5701064C1FDF787D00062722 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701064B1FDF787D00062722 /* AppDelegate.m */; };
+		5701064F1FDF787D00062722 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701064E1FDF787D00062722 /* ViewController.m */; };
+		570106521FDF787D00062722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570106501FDF787D00062722 /* Main.storyboard */; };
+		570106541FDF787D00062722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570106531FDF787D00062722 /* Assets.xcassets */; };
+		570106571FDF787D00062722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570106551FDF787D00062722 /* LaunchScreen.storyboard */; };
+		570106621FDF787D00062722 /* VastNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106611FDF787D00062722 /* VastNewsTests.m */; };
+		5701066D1FDF787D00062722 /* VastNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701066C1FDF787D00062722 /* VastNewsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5701065E1FDF787D00062722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5701063C1FDF787D00062722 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 570106431FDF787D00062722;
+			remoteInfo = VastNews;
+		};
+		570106691FDF787D00062722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5701063C1FDF787D00062722 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 570106431FDF787D00062722;
+			remoteInfo = VastNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		570106441FDF787D00062722 /* VastNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VastNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		570106481FDF787D00062722 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5701064A1FDF787D00062722 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5701064B1FDF787D00062722 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5701064D1FDF787D00062722 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5701064E1FDF787D00062722 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		570106511FDF787D00062722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		570106531FDF787D00062722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		570106561FDF787D00062722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		570106581FDF787D00062722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5701065D1FDF787D00062722 /* VastNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		570106611FDF787D00062722 /* VastNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastNewsTests.m; sourceTree = "<group>"; };
+		570106631FDF787D00062722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		570106681FDF787D00062722 /* VastNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5701066C1FDF787D00062722 /* VastNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastNewsUITests.m; sourceTree = "<group>"; };
+		5701066E1FDF787D00062722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		570106411FDF787D00062722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5701065A1FDF787D00062722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570106651FDF787D00062722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5701063B1FDF787D00062722 = {
+			isa = PBXGroup;
+			children = (
+				570106461FDF787D00062722 /* VastNews */,
+				570106601FDF787D00062722 /* VastNewsTests */,
+				5701066B1FDF787D00062722 /* VastNewsUITests */,
+				570106451FDF787D00062722 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		570106451FDF787D00062722 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				570106441FDF787D00062722 /* VastNews.app */,
+				5701065D1FDF787D00062722 /* VastNewsTests.xctest */,
+				570106681FDF787D00062722 /* VastNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		570106461FDF787D00062722 /* VastNews */ = {
+			isa = PBXGroup;
+			children = (
+				5701064A1FDF787D00062722 /* AppDelegate.h */,
+				5701064B1FDF787D00062722 /* AppDelegate.m */,
+				5701064D1FDF787D00062722 /* ViewController.h */,
+				5701064E1FDF787D00062722 /* ViewController.m */,
+				570106501FDF787D00062722 /* Main.storyboard */,
+				570106531FDF787D00062722 /* Assets.xcassets */,
+				570106551FDF787D00062722 /* LaunchScreen.storyboard */,
+				570106581FDF787D00062722 /* Info.plist */,
+				570106471FDF787D00062722 /* Supporting Files */,
+			);
+			path = VastNews;
+			sourceTree = "<group>";
+		};
+		570106471FDF787D00062722 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				570106481FDF787D00062722 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		570106601FDF787D00062722 /* VastNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				570106611FDF787D00062722 /* VastNewsTests.m */,
+				570106631FDF787D00062722 /* Info.plist */,
+			);
+			path = VastNewsTests;
+			sourceTree = "<group>";
+		};
+		5701066B1FDF787D00062722 /* VastNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5701066C1FDF787D00062722 /* VastNewsUITests.m */,
+				5701066E1FDF787D00062722 /* Info.plist */,
+			);
+			path = VastNewsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		570106431FDF787D00062722 /* VastNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570106711FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNews" */;
+			buildPhases = (
+				570106401FDF787D00062722 /* Sources */,
+				570106411FDF787D00062722 /* Frameworks */,
+				570106421FDF787D00062722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VastNews;
+			productName = VastNews;
+			productReference = 570106441FDF787D00062722 /* VastNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5701065C1FDF787D00062722 /* VastNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570106741FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNewsTests" */;
+			buildPhases = (
+				570106591FDF787D00062722 /* Sources */,
+				5701065A1FDF787D00062722 /* Frameworks */,
+				5701065B1FDF787D00062722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5701065F1FDF787D00062722 /* PBXTargetDependency */,
+			);
+			name = VastNewsTests;
+			productName = VastNewsTests;
+			productReference = 5701065D1FDF787D00062722 /* VastNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		570106671FDF787D00062722 /* VastNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570106771FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNewsUITests" */;
+			buildPhases = (
+				570106641FDF787D00062722 /* Sources */,
+				570106651FDF787D00062722 /* Frameworks */,
+				570106661FDF787D00062722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5701066A1FDF787D00062722 /* PBXTargetDependency */,
+			);
+			name = VastNewsUITests;
+			productName = VastNewsUITests;
+			productReference = 570106681FDF787D00062722 /* VastNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5701063C1FDF787D00062722 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "任超";
+				TargetAttributes = {
+					570106431FDF787D00062722 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					5701065C1FDF787D00062722 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 570106431FDF787D00062722;
+					};
+					570106671FDF787D00062722 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 570106431FDF787D00062722;
+					};
+				};
+			};
+			buildConfigurationList = 5701063F1FDF787D00062722 /* Build configuration list for PBXProject "VastNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5701063B1FDF787D00062722;
+			productRefGroup = 570106451FDF787D00062722 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				570106431FDF787D00062722 /* VastNews */,
+				5701065C1FDF787D00062722 /* VastNewsTests */,
+				570106671FDF787D00062722 /* VastNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		570106421FDF787D00062722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570106571FDF787D00062722 /* LaunchScreen.storyboard in Resources */,
+				570106541FDF787D00062722 /* Assets.xcassets in Resources */,
+				570106521FDF787D00062722 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5701065B1FDF787D00062722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570106661FDF787D00062722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		570106401FDF787D00062722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5701064F1FDF787D00062722 /* ViewController.m in Sources */,
+				5701064C1FDF787D00062722 /* AppDelegate.m in Sources */,
+				570106491FDF787D00062722 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570106591FDF787D00062722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570106621FDF787D00062722 /* VastNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570106641FDF787D00062722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5701066D1FDF787D00062722 /* VastNewsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5701065F1FDF787D00062722 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 570106431FDF787D00062722 /* VastNews */;
+			targetProxy = 5701065E1FDF787D00062722 /* PBXContainerItemProxy */;
+		};
+		5701066A1FDF787D00062722 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 570106431FDF787D00062722 /* VastNews */;
+			targetProxy = 570106691FDF787D00062722 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		570106501FDF787D00062722 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				570106511FDF787D00062722 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		570106551FDF787D00062722 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				570106561FDF787D00062722 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5701066F1FDF787D00062722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		570106701FDF787D00062722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		570106721FDF787D00062722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VastNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		570106731FDF787D00062722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VastNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		570106751FDF787D00062722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VastNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VastNews.app/VastNews";
+			};
+			name = Debug;
+		};
+		570106761FDF787D00062722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VastNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VastNews.app/VastNews";
+			};
+			name = Release;
+		};
+		570106781FDF787D00062722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VastNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VastNews;
+			};
+			name = Debug;
+		};
+		570106791FDF787D00062722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VastNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VastNews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5701063F1FDF787D00062722 /* Build configuration list for PBXProject "VastNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5701066F1FDF787D00062722 /* Debug */,
+				570106701FDF787D00062722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570106711FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570106721FDF787D00062722 /* Debug */,
+				570106731FDF787D00062722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		570106741FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570106751FDF787D00062722 /* Debug */,
+				570106761FDF787D00062722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		570106771FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570106781FDF787D00062722 /* Debug */,
+				570106791FDF787D00062722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5701063C1FDF787D00062722 /* Project object */;
+}

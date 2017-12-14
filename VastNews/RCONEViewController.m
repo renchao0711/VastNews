@@ -1,29 +1,28 @@
 //
-//  ViewController.m
+//  RCONEViewController.m
 //  VastNews
 //
 //  Created by 任超 on 2017/12/12.
 //  Copyright © 2017年 任超. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RCONEViewController.h"
 
-@interface ViewController ()
+@interface RCONEViewController ()
 
 @end
 
-@implementation ViewController
+@implementation RCONEViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"七个";
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

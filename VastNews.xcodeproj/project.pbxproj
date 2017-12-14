@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		570106491FDF787D00062722 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106481FDF787D00062722 /* main.m */; };
 		5701064C1FDF787D00062722 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701064B1FDF787D00062722 /* AppDelegate.m */; };
-		5701064F1FDF787D00062722 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701064E1FDF787D00062722 /* ViewController.m */; };
-		570106521FDF787D00062722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570106501FDF787D00062722 /* Main.storyboard */; };
 		570106541FDF787D00062722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570106531FDF787D00062722 /* Assets.xcassets */; };
 		570106571FDF787D00062722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570106551FDF787D00062722 /* LaunchScreen.storyboard */; };
 		570106621FDF787D00062722 /* VastNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106611FDF787D00062722 /* VastNewsTests.m */; };
 		5701066D1FDF787D00062722 /* VastNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701066C1FDF787D00062722 /* VastNewsUITests.m */; };
+		5701067C1FDF799B00062722 /* RCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701067B1FDF799B00062722 /* RCTabbarController.m */; };
+		5701068D1FDF848000062722 /* RCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701068C1FDF848000062722 /* RCNewsViewController.m */; };
+		570106901FDF849700062722 /* RCONEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701068F1FDF849700062722 /* RCONEViewController.m */; };
+		570106931FDF8CF000062722 /* RCNewsTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106921FDF8CF000062722 /* RCNewsTypeView.m */; };
+		570106961FE155AE00062722 /* RCNewsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106951FE155AE00062722 /* RCNewsTableView.m */; };
+		570106991FE156C900062722 /* RCNewsADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 570106981FE156C900062722 /* RCNewsADView.m */; };
+		5701069C1FE159B100062722 /* RCNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5701069B1FE159B100062722 /* RCNewsTableViewCell.m */; };
+		578F06D91FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F06D81FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +45,6 @@
 		570106481FDF787D00062722 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5701064A1FDF787D00062722 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5701064B1FDF787D00062722 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5701064D1FDF787D00062722 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5701064E1FDF787D00062722 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		570106511FDF787D00062722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		570106531FDF787D00062722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		570106561FDF787D00062722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570106581FDF787D00062722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +54,23 @@
 		570106681FDF787D00062722 /* VastNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5701066C1FDF787D00062722 /* VastNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastNewsUITests.m; sourceTree = "<group>"; };
 		5701066E1FDF787D00062722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5701067A1FDF799B00062722 /* RCTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTabbarController.h; sourceTree = "<group>"; };
+		5701067B1FDF799B00062722 /* RCTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTabbarController.m; sourceTree = "<group>"; };
+		5701068A1FDF835D00062722 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5701068B1FDF848000062722 /* RCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewsViewController.h; sourceTree = "<group>"; };
+		5701068C1FDF848000062722 /* RCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewsViewController.m; sourceTree = "<group>"; };
+		5701068E1FDF849700062722 /* RCONEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCONEViewController.h; sourceTree = "<group>"; };
+		5701068F1FDF849700062722 /* RCONEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCONEViewController.m; sourceTree = "<group>"; };
+		570106911FDF8CF000062722 /* RCNewsTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewsTypeView.h; sourceTree = "<group>"; };
+		570106921FDF8CF000062722 /* RCNewsTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewsTypeView.m; sourceTree = "<group>"; };
+		570106941FE155AE00062722 /* RCNewsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewsTableView.h; sourceTree = "<group>"; };
+		570106951FE155AE00062722 /* RCNewsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewsTableView.m; sourceTree = "<group>"; };
+		570106971FE156C900062722 /* RCNewsADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewsADView.h; sourceTree = "<group>"; };
+		570106981FE156C900062722 /* RCNewsADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewsADView.m; sourceTree = "<group>"; };
+		5701069A1FE159B100062722 /* RCNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewsTableViewCell.h; sourceTree = "<group>"; };
+		5701069B1FE159B100062722 /* RCNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewsTableViewCell.m; sourceTree = "<group>"; };
+		578F06D71FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+RcAdViewUnretain.h"; sourceTree = "<group>"; };
+		578F06D81FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+RcAdViewUnretain.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +123,13 @@
 			children = (
 				5701064A1FDF787D00062722 /* AppDelegate.h */,
 				5701064B1FDF787D00062722 /* AppDelegate.m */,
-				5701064D1FDF787D00062722 /* ViewController.h */,
-				5701064E1FDF787D00062722 /* ViewController.m */,
-				570106501FDF787D00062722 /* Main.storyboard */,
-				570106531FDF787D00062722 /* Assets.xcassets */,
-				570106551FDF787D00062722 /* LaunchScreen.storyboard */,
-				570106581FDF787D00062722 /* Info.plist */,
+				5701067A1FDF799B00062722 /* RCTabbarController.h */,
+				5701067B1FDF799B00062722 /* RCTabbarController.m */,
+				570106811FDF7DB600062722 /* LeftView */,
+				5701067D1FDF7B0700062722 /* 1.News */,
+				5701067E1FDF7B7E00062722 /* 2.ONE */,
+				570106801FDF7D9F00062722 /* Config */,
+				5701067F1FDF7D1500062722 /* Library */,
 				570106471FDF787D00062722 /* Supporting Files */,
 			);
 			path = VastNews;
@@ -117,7 +138,10 @@
 		570106471FDF787D00062722 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				570106581FDF787D00062722 /* Info.plist */,
 				570106481FDF787D00062722 /* main.m */,
+				570106551FDF787D00062722 /* LaunchScreen.storyboard */,
+				570106531FDF787D00062722 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +162,120 @@
 				5701066E1FDF787D00062722 /* Info.plist */,
 			);
 			path = VastNewsUITests;
+			sourceTree = "<group>";
+		};
+		5701067D1FDF7B0700062722 /* 1.News */ = {
+			isa = PBXGroup;
+			children = (
+				570106821FDF7E4500062722 /* News_Model */,
+				570106831FDF7E4F00062722 /* News_VIew */,
+				570106841FDF7E5800062722 /* News_Controller */,
+			);
+			name = 1.News;
+			sourceTree = "<group>";
+		};
+		5701067E1FDF7B7E00062722 /* 2.ONE */ = {
+			isa = PBXGroup;
+			children = (
+				570106851FDF7E8A00062722 /* ONE_Model */,
+				570106861FDF7E9900062722 /* ONE_View */,
+				570106871FDF7EA300062722 /* ONE_Controller */,
+			);
+			name = 2.ONE;
+			sourceTree = "<group>";
+		};
+		5701067F1FDF7D1500062722 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		570106801FDF7D9F00062722 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5701068A1FDF835D00062722 /* PrefixHeader.pch */,
+				578F06D71FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.h */,
+				578F06D81FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		570106811FDF7DB600062722 /* LeftView */ = {
+			isa = PBXGroup;
+			children = (
+				570106891FDF82DB00062722 /* Register */,
+				570106881FDF82D400062722 /* Login */,
+			);
+			name = LeftView;
+			sourceTree = "<group>";
+		};
+		570106821FDF7E4500062722 /* News_Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = News_Model;
+			sourceTree = "<group>";
+		};
+		570106831FDF7E4F00062722 /* News_VIew */ = {
+			isa = PBXGroup;
+			children = (
+				570106911FDF8CF000062722 /* RCNewsTypeView.h */,
+				570106921FDF8CF000062722 /* RCNewsTypeView.m */,
+				570106971FE156C900062722 /* RCNewsADView.h */,
+				570106981FE156C900062722 /* RCNewsADView.m */,
+				570106941FE155AE00062722 /* RCNewsTableView.h */,
+				570106951FE155AE00062722 /* RCNewsTableView.m */,
+				5701069A1FE159B100062722 /* RCNewsTableViewCell.h */,
+				5701069B1FE159B100062722 /* RCNewsTableViewCell.m */,
+			);
+			name = News_VIew;
+			sourceTree = "<group>";
+		};
+		570106841FDF7E5800062722 /* News_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5701068B1FDF848000062722 /* RCNewsViewController.h */,
+				5701068C1FDF848000062722 /* RCNewsViewController.m */,
+			);
+			name = News_Controller;
+			sourceTree = "<group>";
+		};
+		570106851FDF7E8A00062722 /* ONE_Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ONE_Model;
+			sourceTree = "<group>";
+		};
+		570106861FDF7E9900062722 /* ONE_View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ONE_View;
+			sourceTree = "<group>";
+		};
+		570106871FDF7EA300062722 /* ONE_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5701068E1FDF849700062722 /* RCONEViewController.h */,
+				5701068F1FDF849700062722 /* RCONEViewController.m */,
+			);
+			name = ONE_Controller;
+			sourceTree = "<group>";
+		};
+		570106881FDF82D400062722 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		570106891FDF82DB00062722 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +386,6 @@
 			files = (
 				570106571FDF787D00062722 /* LaunchScreen.storyboard in Resources */,
 				570106541FDF787D00062722 /* Assets.xcassets in Resources */,
-				570106521FDF787D00062722 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +410,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5701064F1FDF787D00062722 /* ViewController.m in Sources */,
+				5701067C1FDF799B00062722 /* RCTabbarController.m in Sources */,
 				5701064C1FDF787D00062722 /* AppDelegate.m in Sources */,
+				5701069C1FE159B100062722 /* RCNewsTableViewCell.m in Sources */,
+				570106901FDF849700062722 /* RCONEViewController.m in Sources */,
+				570106991FE156C900062722 /* RCNewsADView.m in Sources */,
+				5701068D1FDF848000062722 /* RCNewsViewController.m in Sources */,
+				570106961FE155AE00062722 /* RCNewsTableView.m in Sources */,
+				578F06D91FE2660B00972CF1 /* NSTimer+RcAdViewUnretain.m in Sources */,
+				570106931FDF8CF000062722 /* RCNewsTypeView.m in Sources */,
 				570106491FDF787D00062722 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +455,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		570106501FDF787D00062722 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				570106511FDF787D00062722 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		570106551FDF787D00062722 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,6 +558,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/renchao/Desktop/VastNews/VastNews/PrefixHeader.pch;
 				INFOPLIST_FILE = VastNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNews;
@@ -433,6 +571,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/renchao/Desktop/VastNews/VastNews/PrefixHeader.pch;
 				INFOPLIST_FILE = VastNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = renchao.VastNews;
@@ -505,6 +645,7 @@
 				570106731FDF787D00062722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		570106741FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +654,7 @@
 				570106761FDF787D00062722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		570106771FDF787D00062722 /* Build configuration list for PBXNativeTarget "VastNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +663,7 @@
 				570106791FDF787D00062722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+//自定义广告栏点击的block
+typedef void(^RCAdTapBlock)(int index);
+
 @interface RCNewsADView : UIView
 
 @property (nonatomic, strong) UIScrollView *rcADScrollerView;
 @property (nonatomic, strong) UIPageControl *rcPageController;
+
+@property (nonatomic, copy) RCAdTapBlock rcAdTapBlcok;
 
 @end

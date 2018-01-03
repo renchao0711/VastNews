@@ -7,9 +7,9 @@
 //
 
 #import "RCNewsADView.h"
+#import "RCNewsDetailViewController.h"
 
 @interface RCNewsADView ()<UIScrollViewDelegate>
-
 
 @end
 
@@ -45,6 +45,17 @@
         rcADImageView.frame = CGRectMake(i * RCScreenW, 0, RCScreenW, RCScreenW*0.5);
         [_rcADScrollerView addSubview:rcADImageView];
         
+        rcADImageView.userInteractionEnabled = YES;
+        rcADImageView.tag = i;
+        
+        //加手势
+        UITapGestureRecognizer *rcADImageTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(RCADTapAction:)];
+        rcADImageTapGestureRecognizer.numberOfTapsRequired = 1;
+        rcADImageTapGestureRecognizer.numberOfTapsRequired = 1;
+        
+        [rcADImageView addGestureRecognizer:rcADImageTapGestureRecognizer];
+        
+        
         //初始化广告标题
         UILabel *rcADTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, RCScreenW*0.5-30, RCScreenW, 30)];
         rcADTitleLabel.text = [NSString stringWithFormat:@" 这是广告标题"];
@@ -68,6 +79,16 @@
     
     int page = scrollView.contentOffset.x/RCScreenW;
     _rcPageController.currentPage = page;
+}
+
+- (void)RCADTapAction:(UITapGestureRecognizer *)sender{
+    
+    if (self.rcAdTapBlcok) {
+        self.rcAdTapBlcok((int)sender.view.tag);
+        NSLog(@"888");
+    }
+   
+    NSLog(@"sender.view.tag：%ld",sender.view.tag);
 }
 
 @end

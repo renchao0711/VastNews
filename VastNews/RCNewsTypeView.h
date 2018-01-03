@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 //自定义block
-typedef void(^ContentToTitle)(int index);
-typedef void(^TitleToContent)(int index);
+typedef void(^ContentToTitleBlock)(int index);
+typedef void(^TitleToContentBlock)(int index);
 
 //自定义翻页scroll的代理
 @protocol rcNewsTypeViewDelegate <NSObject>
@@ -23,8 +23,8 @@ typedef void(^TitleToContent)(int index);
 
 @property (nonatomic,strong) UIScrollView *rcContentScrollerView; //内容滑动视图
 
-@property (nonatomic,copy) ContentToTitle contentToTitle; //滑动内容scroll改变标题位置
-@property (nonatomic,copy) TitleToContent titleToContent; //滑动内容scroll改变标题位置
+@property (nonatomic,copy) ContentToTitleBlock contentToTitleBlock; //滑动内容scroll改变标题位置
+@property (nonatomic,copy) TitleToContentBlock titleToContentBlock; //滑动内容scroll改变标题位置
 
 @property (nonatomic,weak) id <rcNewsTypeViewDelegate> Delegate;
 

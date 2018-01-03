@@ -110,8 +110,8 @@ int selectIndex = 100;
     selectIndex = (int)button.tag;
     
     
-    if (self.titleToContent) {
-        self.titleToContent(selectIndex - 100);
+    if (self.titleToContentBlock) {
+        self.titleToContentBlock(selectIndex - 100);
     }
     
     //执行自定义delegate
@@ -154,7 +154,7 @@ int selectIndex = 100;
 - (void)setUpBlock{
     
     __weak typeof (self) weakSelf = self;
-    self.contentToTitle = ^(int index){
+    self.contentToTitleBlock = ^(int index){
         NSLog(@"%d",index);
         
         UIButton *oldButton = (UIButton *)[weakSelf.rcTitleScrollerView viewWithTag:selectIndex];

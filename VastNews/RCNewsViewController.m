@@ -11,10 +11,13 @@
 #import "RCNewsTableView.h"
 #import "RCNewsADView.h"
 #import "NSTimer+RcAdViewUnretain.h"
+#import "RCNewsDetailViewController.h"
+#import "RCLoginViewController.h"
+
 
 int page;  //存页数
 
-@interface RCNewsViewController ()<UIScrollViewDelegate,rcNewsTypeViewDelegate>
+@interface RCNewsViewController ()<UIScrollViewDelegate,rcNewsTypeViewDelegate,UITableViewDelegate>
 
 @property (nonatomic, strong) RCNewsTypeView *typeView;
 @property (nonatomic, strong) RCNewsADView *rcAdView;
@@ -37,18 +40,60 @@ int page;  //存页数
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-
-    self.title = @"新闻";
     
+    [self setUpNavStyle];
     [self setUpNewsTypeView];
     [self setUpNewsTableView];
     [self recieveIndexBlcok];
     
     self.typeView.Delegate = self;
-    
     self.rcAdView.rcADScrollerView.delegate = self;
+    
+    //有bug
+    self.rcAdView.rcAdTapBlcok = ^(int index){
+        NSLog(@"777");
+    };
+    
+    //[self refresh];
+    
+}
+
+////网络请求JSON数据
+//-(void)refresh{
+//    
+//    NSLog(@"fresh");
+//    
+//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+//    
+//    NSString *url1 = @"http://v.juhe.cn/toutiao/index";
+//    AFHTTPSessionManager *session1 = [AFHTTPSessionManager manager];
+//    session1.responseSerializer = [AFJSONResponseSerializer serializer];
+//    session1.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    [session1.responseSerializer.acceptableContentTypes setByAddingObject:@"text/plain"];
+//    session1.requestSerializer.timeoutInterval = 10;
+//    [session1 POST:url1 parameters:@{@"type":@"top",@"key":@"a89f838a518b5d25515d21894926605f"} progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+//        
+//        NSLog(@"responseObject:%@",responseObject);
+//        
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        
+//        NSLog(@"%@",error);
+//    }];
+//}
+
+
+//设置导航栏样式
+- (void)setUpNavStyle{
+    
+    self.title = @"新闻";
+    self.navigationController.navigationBar.titleTextAttributes
+    = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:20]};
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"登陆/注册" style:UIBarButtonItemStylePlain target:self action:@selector(navLeftButtonAction)];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 
 }
+
 
 //实例化分类视图
 - (void)setUpNewsTypeView{
@@ -65,6 +110,9 @@ int page;  //存页数
 - (void)setUpNewsTableView{
     
     RCNewsTableView *rcNewsTableView = [[RCNewsTableView alloc]initWithFrame:CGRectMake(0, 0, RCScreenW, self.typeView.rcContentScrollerView.frame.size.height) style:UITableViewStylePlain];
+    
+    rcNewsTableView.delegate = self;
+    
     [_typeView.rcContentScrollerView addSubview:rcNewsTableView];
     
     RCNewsADView *rcADNewsView = [[RCNewsADView alloc]initWithFrame:CGRectMake(0, 0, RCScreenW, RCScreenW*0.5)];
@@ -98,7 +146,7 @@ int page;  //存页数
     
     CGFloat offsetX = scrollView.contentOffset.x;
     NSLog(@"%f",scrollView.contentOffset.x);
-    self.typeView.contentToTitle((int)(offsetX/RCScreenW)+0.5);
+    self.typeView.contentToTitleBlock((int)(offsetX/RCScreenW)+0.5);
 }
 
 //点击button让内容翻页的block方法实现
@@ -106,7 +154,7 @@ int page;  //存页数
     
     __weak typeof (self) weakSelf = self;
     
-    self.typeView.titleToContent = ^(int index){
+    self.typeView.titleToContentBlock = ^(int index){
         
         NSLog(@"-------------%d",index);
         [weakSelf.typeView.rcContentScrollerView setContentOffset:CGPointMake(index*RCScreenW, 0) animated:YES];
@@ -119,6 +167,9 @@ int page;  //存页数
     //判断是否加载过视图
     if ([self.tableViewArray[index]  isEqual: @0]) {
         RCNewsTableView *rcNewsTableView = [[RCNewsTableView alloc]initWithFrame:CGRectMake(index*RCScreenW, 0, RCScreenW, self.typeView.rcContentScrollerView.frame.size.height) style:UITableViewStylePlain];
+        
+        rcNewsTableView.delegate = self;
+        
         [self.typeView.rcContentScrollerView addSubview:rcNewsTableView];
         self.tableViewArray[1] = [NSNumber numberWithInt:1];
         NSLog(@"123");
@@ -126,8 +177,20 @@ int page;  //存页数
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSLog(@"2333");
+    RCNewsDetailViewController *rcNewsDetailViewController = [[RCNewsDetailViewController alloc]init];
+    
+    rcNewsDetailViewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:rcNewsDetailViewController animated:YES];
+}
+
+- (void)navLeftButtonAction{
+    NSLog(@"navLeftButtonAction");
+    RCLoginViewController *rcLoginViewController = [[RCLoginViewController alloc]init];
+    [self presentViewController:rcLoginViewController animated:YES completion:nil];
 }
 
 - (void)dealloc{
